@@ -1,0 +1,459 @@
+<!-- portfolio.component.html -->
+<section
+  class=" font-[Poppins] bg-gradient-to-br from-purple-200 via-pink-100 to-purple-300 text-gray-800 p-0"
+>
+  <!-- Hero Section (Top Name) -->
+  <div
+    class="text-center py-2 md:py-2 text-white font-[Poppins]  shadow-xl "
+  >
+    <h1
+      class="text-5xl font-extrabold mb-4 tracking-wide text-black drop-shadow-lg animate-fade-in"
+    >
+      Huzaifa Shah
+    </h1>
+    <p class="text-lg opacity-90 text-black">
+      Angular & Node.js Developer | Full-Stack Engineer | AI Integration Specialist
+    </p>
+  </div>
+
+  <!-- About Section -->
+  <div
+    class="flex flex-col md:flex-row items-center justify-center gap-12 py-20 px-8 md:px-20 bg-white/80  shadow-xl backdrop-blur-md "
+  >
+    <!-- Profile Image -->
+    <img
+      src="/huzaifa.png"
+      alt="Huzaifa Shah"
+      class="rounded-2xl w-80 h-100 object-cover shadow-xl hover:scale-105 transition-transform duration-500"
+    />
+
+    <!-- Profile Text -->
+    <div class="max-w-3xl">
+      <h2
+        class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-4"
+      >
+        I am an Angular & Node.js Specialist
+      </h2>
+  <p class="text-gray-700 text-xl leading-relaxed mb-3">
+  I’m an Angular and Node.js developer passionate about building fast, responsive, and scalable web applications. I specialize in developing modern UIs with Angular 19, Tailwind CSS, PrimeNG, and Angular Material, ensuring seamless user experiences across all devices.
+</p>
+
+<p class="text-gray-700 text-xl mb-3">
+  On the backend, I work with Node.js and Express to create robust RESTful APIs and integrate secure authentication systems using JWT, bcrypt, and Google OAuth. I use both PostgreSQL and MongoDB to design efficient and reliable database structures for real-world applications.
+</p>
+
+<p class="text-gray-700 text-xl leading-relaxed">
+  I’m passionate about clean code, modular architecture, and performance optimization. My goal is to build intelligent, scalable, and visually appealing web solutions that deliver real impact.
+</p>
+
+    </div>
+  </div>
+
+  <!-- Work Process Section -->
+  <div
+    class="py-20 px-8 md:px-20 text-center bg-white/80  shadow-xl backdrop-blur-md "
+  >
+    <h2
+      class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-12"
+    >
+      Work Process
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <!-- UX -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:border-pink-400"
+      >
+        <h3 class="text-2xl font-semibold text-purple-600 mb-3">User Experience (UX)</h3>
+        <p class="text-gray-700 leading-relaxed">
+          I ensure Angular applications are intuitive, efficient, and enjoyable by designing
+          workflows that feel natural and purposeful to users.
+        </p>
+      </div>
+
+      <!-- Web Development -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:border-pink-400"
+      >
+        <h3 class="text-2xl font-semibold text-purple-600 mb-3">Web Development</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Using Angular 19, I build scalable, production-ready web apps with dynamic forms,
+          animations, and real-time updates for high performance.
+        </p>
+      </div>
+
+      <!-- UI -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:border-pink-400"
+      >
+        <h3 class="text-2xl font-semibold text-purple-600 mb-3">User Interface (UI)</h3>
+        <p class="text-gray-700 leading-relaxed">
+          I craft responsive, elegant interfaces using Angular and Tailwind CSS, focusing on
+          usability, accessibility, and visual harmony across all devices.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- My Projects Section -->
+
+<section
+  class="py-20 px-8 md:px-20 text-center bg-white/80 shadow-xl backdrop-blur-md font-[Poppins]"
+>
+  <h2
+    class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-12"
+  >
+    My Projects
+  </h2>
+
+  <!-- Projects Grid -->
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <!-- Project 1 -->
+    <div
+      class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 transform hover:-translate-y-2"
+    >
+      <img src="/project1.png" alt="Himalayan Shilajit" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold text-purple-600 mb-2">Himalayan Shilajit</h3>
+        <p class="text-gray-700 mb-4">
+          A complete E-commerce platform developed with Angular and Node.js. Features secure
+          authentication, product management and elegant UI for a premium herbal products brand.
+        </p>
+        <button
+          (click)="openProject('shilajit')"
+          class="px-5 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+        >
+          View Details
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div
+      class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 transform hover:-translate-y-2"
+    >
+      <img src="/project2.png" alt="Services Website" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold text-purple-600 mb-2">Services Providing Website</h3>
+        <p class="text-gray-700 mb-4">
+          A modern service website built in Angular with smooth animations, transitions, and clean
+          UI/UX for presenting digital solutions and client offerings.
+        </p>
+        <button
+          (click)="openProject('services')"
+          class="px-5 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+        >
+          View Details
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div
+      class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 transform hover:-translate-y-2"
+    >
+      <img src="/project3.png" alt="E-commerce Store" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold text-purple-600 mb-2">E-Commerce Store</h3>
+        <p class="text-gray-700 mb-4">
+          A full-stack Angular and Node.js store integrated with MongoDB, Google OAuth, JWT
+          authentication, password hashing, CRUD operations, and dynamic product management.
+        </p>
+        <button
+          (click)="openProject('store')"
+          class="px-5 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+        >
+          View Details
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div
+      class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-500 transform hover:-translate-y-2"
+    >
+      <img src="/project4.png" alt="Bug Fixer Tool" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold text-purple-600 mb-2">Bug Fixer Tool</h3>
+        <p class="text-gray-700 mb-4">
+          An AI-powered debugging assistant that integrates the DeepSeek API to automatically
+          identify, analyze, and fix code errors intelligently in real-time.
+        </p>
+        <button
+          (click)="openProject('bugfixer')"
+          class="px-5 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+        >
+          View Details
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-Screen Project Viewer -->
+  <div
+    *ngIf="selectedProject"
+    class="fixed inset-0 bg-black/90 text-white flex flex-col items-center justify-center px-6 md:px-20 z-50 overflow-y-auto transition-all duration-500"
+  >
+    <!-- Close Button -->
+    <button
+      (click)="closeProject()"
+      class="absolute top-6 right-8 text-3xl hover:text-pink-400 transition"
+    >
+      ✕
+    </button>
+
+    <div
+      class="max-w-4xl w-full mt-20 mb-10 space-y-6 text-center animate-fade-in"
+    >
+      <h3
+        class="text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent"
+      >
+        {{ selectedProjectData?.title }}
+      </h3>
+
+      <p class="text-gray-200 text-lg leading-relaxed px-4">
+        {{ selectedProjectData?.description }}
+      </p>
+
+      <video
+        [src]="selectedProjectData?.video"
+        controls
+        autoplay
+        class="w-full max-h-[70vh] object-contain rounded-2xl shadow-2xl my-6"
+      ></video>
+
+      <a
+        [href]="selectedProjectData?.link"
+        target="_blank"
+        class="inline-block bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full shadow-lg font-medium hover:scale-105 transition-transform"
+      >
+        Visit Website
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- My Skills Section -->
+<section
+  class="py-20 px-8 md:px-20 text-center bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100"
+>
+  <h2
+    class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-12"
+  >
+    My Skills
+  </h2>
+
+  <div
+    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 max-w-6xl mx-auto place-items-center"
+  >
+    <img src="/image1.png" alt="Skill 1" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image2.png" alt="Skill 2" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image3.png" alt="Skill 3" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image4.png" alt="Skill 4" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image5.png" alt="Skill 5" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image6.png" alt="Skill 6" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image7.png" alt="Skill 7" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image8.png" alt="Skill 8" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image9.png" alt="Skill 9" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+    <img src="/image10.png" alt="Skill 10" class="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300" />
+  </div>
+</section>
+<!-- My Experience Section -->
+<section
+  class="py-20 px-8 md:px-20 text-center bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100"
+>
+  <h2
+    class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-12"
+  >
+    My Experience
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    
+    <!-- Beetechnica -->
+    <div
+      class="bg-white/80 p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2"
+    >
+      <img
+        src="/beetechnica.png"
+        alt="Beetechnica Logo"
+        class="w-80 h-30 mx-auto mb-6 object-contain"
+      />
+      <h3 class="text-2xl font-semibold text-purple-600 mb-2">
+        Web Development Intern
+      </h3>
+      <p class="text-gray-600 mb-1 text-lg">Beetechnica</p>
+      <p class="text-gray-500 text-sm mb-4 text-lg font-bold">6 Months Internship</p>
+      <p class="text-gray-700 leading-relaxed">
+        Contributed to Angular-based projects, built responsive UIs using
+        Tailwind CSS, and implemented backend APIs with Node.js for dynamic
+        data management.
+      </p>
+    </div>
+    <!-- Huawei -->
+    <div
+      class="bg-white/80 p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2"
+    >
+      <img
+        src="/huawei.png"
+        alt="Huawei Logo"
+        class="w-80 h-30 mx-auto mb-6 object-contain"
+      />
+      <h3 class="text-2xl font-semibold text-purple-600 mb-2">
+        RAN Engineer
+      </h3>
+      <p class="text-gray-600 mb-1 text-lg">Huawei Technologies</p>
+      <p class="text-gray-500 text-sm mb-4 font-bold">3 Months Experience</p>
+      <p class="text-gray-700 leading-relaxed">
+        Worked as a RAN Engineer focusing on network optimization, performance
+        monitoring, and ensuring seamless telecom infrastructure reliability.
+      </p>
+    </div>
+
+
+    <!-- Freelancing -->
+    <div
+      class="bg-white/80 p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2"
+    >
+      <img
+        src="/freelancing.png"
+        alt="Freelancing Logo"
+        class="w-60 h-30 mx-auto mb-6 object-contain"
+      />
+      <h3 class="text-2xl font-semibold text-purple-600 mb-2">
+        Freelance Web Developer And UI/UX Designer 
+      </h3>
+      <p class="text-gray-600 mb-1 text-lg">Self-employed</p>
+      <p class="text-gray-500 text-sm mb-4 font-bold">Ongoing</p>
+      <p class="text-gray-700 leading-relaxed">
+        Designed user-friendly and visually appealing interfaces for clients
+        using Figma , focusing on accessibility and intuitive
+        user experiences, software reports and websites.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Education & Training Section -->
+<section
+  class="py-20 px-8 md:px-20 text-center bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100"
+>
+  <h2
+    class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-12"
+  >
+    Education & Training
+  </h2>
+
+  <div
+    class="max-w-6xl mx-auto bg-white/80 p-10 rounded-3xl shadow-xl backdrop-blur-md text-left space-y-12"
+  >
+    <!-- Bachelor's -->
+    <div>
+      <div class="flex items-center gap-4 mb-3">
+        <h3 class="text-2xl font-semibold text-purple-700">
+          Bachelor of Science in Software Engineering
+        </h3>
+      </div>
+      <p class="text-gray-600 mb-2">
+        Comsats University Islamabad, Abbottabad Campus — <strong>09/2019 – 09/2023</strong>
+      </p>
+      <h4 class="text-xl font-semibold text-pink-600 mb-3">Core Subjects:</h4>
+      <ul class="grid md:grid-cols-3 gap-2 text-gray-700 list-disc list-inside">
+        <li>Programming Fundamentals</li>
+        <li>Object Oriented Programming</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Introduction to Web Development</li>
+        <li>Introduction to Android Development</li>
+        <li>Introduction to Databases</li>
+        <li>Introduction to Data Science</li>
+        <li>Object Oriented Software Engineering</li>
+        <li>Software Quality Engineering</li>
+        <li>Software Testing</li>
+        <li>Game Development</li>
+        <li>Data Communication and Computer Networking</li>
+      </ul>
+    </div>
+
+    <!-- Intermediate -->
+    <div>
+      <div class="flex items-center gap-4 mb-3">
+        <h3 class="text-2xl font-semibold text-purple-700">F.Sc Pre-Engineering</h3>
+      </div>
+      <p class="text-gray-600">
+        Govt. Post Graduate College No.1, Abbottabad — <strong>2017 – 2019</strong>
+      </p>
+      <p class="text-gray-700 mt-2">
+        Focused on core science and mathematics subjects including Physics, Chemistry, and
+        Mathematics.
+      </p>
+    </div>
+
+    <!-- Matriculation -->
+    <div>
+      <div class="flex items-center gap-4 mb-3">
+        <h3 class="text-2xl font-semibold text-purple-700">Matriculation (Science)</h3>
+      </div>
+      <p class="text-gray-600">
+        Model Public School, Abbottabad — <strong>2015 – 2017</strong>
+      </p>
+      <p class="text-gray-700 mt-2">
+        Completed secondary education with distinction in Mathematics, Physics, and Computer
+        Science.
+      </p>
+    </div>
+
+    <!-- Languages -->
+    <div>
+      <h4 class="text-xl font-semibold text-pink-600 mb-3">Languages:</h4>
+      <p class="text-gray-700 mb-2">English, Urdu, Hindko</p>
+      <p class="text-gray-700">
+        <strong class="text-purple-600">PTE Official Test:</strong> Scored 7 Bands
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer
+  class="bg-gradient-to-r from-purple-900 via-pink-900 to-purple-800 text-white py-12 text-left px-8 md:px-20 shadow-xl"
+>
+  <h3 class="text-3xl font-semibold mb-6">Contact Me</h3>
+
+  <!-- Email -->
+  <p class="text-lg mb-2">
+    📧
+    <a href="mailto:huzaifa522@gmail.com" class="underline hover:text-gray-200"
+      >huzaifa522@gmail.com</a
+    >
+  </p>
+
+  <!-- LinkedIn -->
+  <p class="text-lg mb-2">
+    💼
+    <a
+      href="https://www.linkedin.com/in/huzaifa-shah-3432881b6/"
+      target="_blank"
+      class="underline hover:text-gray-200"
+      >linkedin.com/in/huzaifashah</a
+    >
+  </p>
+
+  <!-- Phone -->
+  <p class="text-lg mb-2">
+    📞
+    <a href="tel:+923090184268" class="underline hover:text-gray-200"
+      >+92 309 0184268</a
+    >
+  </p>
+
+  <!-- Address -->
+  <p class="text-lg mb-6">
+    📍
+    <span class="opacity-90"
+      >Village Arabkhan, Post Office Attershisha, Tehsil & District Mansehra</span
+    >
+  </p>
+
+  <p class="opacity-80 text-sm mt-8">
+    © {{ currentYear }} Huzaifa Shah. All rights reserved.
+  </p>
+</footer>
