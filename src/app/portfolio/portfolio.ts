@@ -17,6 +17,11 @@ interface ProjectData {
 export class Portfolio {
   showExperienceLetter = false;
 
+  openLetter() {
+    window.open('assets/experience-letter.png', '_blank');
+  }
+
+
   currentYear = new Date().getFullYear();
 
   // 🔗 Editable website links
