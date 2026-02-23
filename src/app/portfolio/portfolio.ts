@@ -65,4 +65,5 @@ export class Portfolio {
   closeProject() {
     this.selectedProjectData = null;
   }
+  
 }
